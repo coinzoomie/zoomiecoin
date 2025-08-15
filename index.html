@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Zoomie Coin — 3D Hybrid World</title>
+  <meta name="description" content="Zoomie Coin (ZOO) — a 3D interactive website blending neon space vibes with playful fantasy animals.">
+  <link rel="icon" href="images/favicon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+  <div class="hud">
+    <div class="brand"><span class="logo">ZOO</span> Zoomie Coin</div>
+    <div class="score">Coins: <b id="score">0</b> / 10</div>
+    <div class="controls">Move: WASD · Look: Drag · Jump: Space</div>
+    <div class="cta">
+      <a class="btn glow" id="buyLink" href="#" target="_blank" rel="noopener">Buy (soon)</a>
+      <a class="btn" id="roadmapLink">Roadmap</a>
+      <a class="btn" id="tokenomicsLink">Tokenomics</a>
+      <a class="btn" id="charityLink">Charity</a>
+    </div>
+  </div>
+
+  <div class="panel" id="infoPanel">
+    <div class="panel-content">
+      <h2 id="panelTitle">Welcome</h2>
+      <p id="panelText">Collect coins, step into glowing portals to explore sections. Everything is live in 3D.</p>
+      <button class="btn glow" id="panelClose">Close</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div>© 2025 Zoomie Coin — BEP20</div>
+    <div class="links">
+      <a href="#">X</a><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Telegram</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
