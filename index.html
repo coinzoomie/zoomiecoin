@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ZoomieCoin — 3D Hyper Experience</title>
+  <meta name="description" content="ZoomieCoin (ZOO) — A fast 3D interactive site. Mobile & desktop optimized. Roadmap, Tokenomics, and more.">
+  <link rel="icon" href="assets/logo.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+  <header class="nav">
+    <div class="brand"><img src="assets/logo.png" alt="ZOO" class="logo"/> <span>ZoomieCoin</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#join">Join</a>
+    </nav>
+    <a class="btn glow" id="buyBtn" href="#" target="_blank" rel="noopener">Buy (soon)</a>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-card">
+        <h1>ZoomieCoin (ZOO)</h1>
+        <p>Fast, playful, and community-powered. Built for real utility and a whole lot of fun.</p>
+        <div class="cta-row">
+          <a class="btn glow" href="#join">Join Now</a>
+          <a class="btn" id="openPanel">Why ZOO?</a>
+        </div>
+        <div class="hint">Move: WASD · Look: Drag · Jump: Space</div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="content">
+      <h2>Roadmap</h2>
+      <div class="steps">
+        <div class="step"><b>Phase 1</b> — Airdrop & Viral Challenge</div>
+        <div class="step"><b>Phase 2</b> — Presale + Charity Wallet</div>
+        <div class="step"><b>Phase 3</b> — DEX Listing & Liquidity</div>
+        <div class="step"><b>Phase 4</b> — 3D Mini-Games</div>
+        <div class="step"><b>Phase 5</b> — Optional Staking & Burns</div>
+        <div class="step"><b>Phase 6</b> — POS Pilot & Ticketing</div>
+        <div class="step"><b>Phase 7</b> — Vet & Shelter Partnerships</div>
+        <div class="step"><b>Phase 8</b> — Metaverse City</div>
+      </div>
+    </section>
+
+    <section id="tokenomics" class="content">
+      <h2>Tokenomics</h2>
+      <ul class="tokens">
+        <li><b>Total Supply:</b> 1,000,000,000 ZOO</li>
+        <li>Airdrop 5% · Presale 20% · Staking 15% · Liquidity 15%</li>
+        <li>Charity 10% · Marketing 10% · Team 10% · Metaverse 10% · Burn 5%</li>
+      </ul>
+    </section>
+
+    <section id="join" class="content join">
+      <h2>Join the pack</h2>
+      <p>Follow and tag us for contests, airdrops, and community rewards.</p>
+      <div class="links">
+        <a href="#" class="btn">X</a>
+        <a href="#" class="btn">Instagram</a>
+        <a href="#" class="btn">TikTok</a>
+        <a href="#" class="btn">Telegram</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="panel" id="infoPanel">
+    <div class="panel-content">
+      <h3>Why ZoomieCoin?</h3>
+      <p>Fun meets function. Viral-friendly brand, animal welfare impact, transparent tokenomics — and a 3D-first web experience.</p>
+      <button class="btn glow" id="closePanel">Close</button>
+    </div>
+  </div>
+
+  <footer class="footer">© 2025 ZoomieCoin — BEP20</footer>
+
+  <!-- Three.js (no modules; works on GitHub Pages) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
