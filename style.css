@@ -1,41 +1,20 @@
-*{box-sizing:border-box}
-html,body{height:100%;margin:0;background:#0a0a15;color:#eaf0ff;font-family:'Poppins',system-ui,Arial;scroll-behavior:smooth}
-#bg{position:fixed;inset:0;z-index:-2}
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
 
-.nav{position:fixed;top:12px;left:12px;right:12px;display:flex;align-items:center;gap:12px;z-index:10;
-  background:rgba(10,10,22,.55);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:10px 12px}
-.nav nav{display:flex;gap:12px;margin-left:10px}
-.nav a{text-decoration:none;color:#eaf0ff;opacity:.9}
-.brand{display:flex;align-items:center;font-weight:900;gap:10px}
-.logo{width:30px;height:30px;border-radius:8px}
-.btn{display:inline-block;padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.15);
-  background:rgba(255,255,255,.06);font-weight:800;cursor:pointer;transition:.15s}
-.btn:hover{transform:translateY(-2px)}
-.btn.glow{background:linear-gradient(135deg,#ffd86f,#8ac6ff,#ff7ee8);color:#0a0a12;border:none}
+canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
-.hero{min-height:90vh;display:grid;place-items:center;padding:120px 20px 60px;background:radial-gradient(1200px 600px at 50% 20%, rgba(255,255,255,.06), rgba(0,0,0,0))}
-.hero-card{width:min(900px,92vw);padding:22px;border-radius:18px;border:1px solid rgba(255,255,255,.1);
-  background:rgba(10,10,22,.45)}
-.hero h1{margin:0 0 10px;font-size:clamp(36px,6vw,64px)}
-.hero p{opacity:.95;margin:0 0 16px}
-.cta-row{display:flex;gap:10px;flex-wrap:wrap}
-.hint{opacity:.8;font-size:.9rem;margin-top:8px}
-
-.content{padding:60px 16px;max-width:1100px;margin:0 auto}
-.content h2{font-size:clamp(26px,3.6vw,42px);margin:0 0 14px}
-.steps{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-.step{border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:12px;background:rgba(255,255,255,.04)}
-.tokens{list-style:none;padding:0;margin:0;display:grid;gap:10px}
-.join .links{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-
-.panel{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,2,12,.6);
-  backdrop-filter:blur(6px);z-index:20}
-.panel .panel-content{width:min(640px,92vw);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
-  border-radius:16px;padding:16px}
-
-.footer{padding:18px 12px;text-align:center;opacity:.85}
-
-@media (max-width:820px){
-  .nav nav{display:none}
-  .hero{padding-top:100px}
+.content {
+  position: relative;
+  z-index: 1;
+  margin-top: 20vh;
 }
