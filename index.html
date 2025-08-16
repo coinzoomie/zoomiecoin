@@ -1,17 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZoomieCoin 3D</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ZoomieCoin — 3D Interactive</title>
+  <meta name="description" content="ZoomieCoin (ZOO) — a fast, playful 3D web experience with geometry, animation and scroll/mouse interactions.">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <!-- 3D Canvas -->
   <canvas id="bg"></canvas>
-  <div class="content">
-    <h1>🚀 ZoomieCoin</h1>
-    <p>The Future is 3D</p>
-  </div>
+
+  <!-- UI / Content (for brand + scroll targets) -->
+  <header class="nav">
+    <div class="brand">🚀 ZoomieCoin</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#tokenomics">Tokenomics</a>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <h1>ZoomieCoin (ZOO)</h1>
+    <p>Playful speed. Real utility. 3D-first experience.</p>
+    <div class="cta">
+      <a class="btn" href="#about">Explore ↓</a>
+    </div>
+  </section>
+
+  <section id="about" class="panel">
+    <h2>About</h2>
+    <p>Geometry + animation + interaction. Move your mouse (or drag) and scroll to feel the scene.</p>
+  </section>
+
+  <section id="roadmap" class="panel">
+    <h2>Roadmap</h2>
+    <ul>
+      <li>Airdrop & Viral Challenge</li>
+      <li>Presale + Charity Wallet</li>
+      <li>DEX Listing & Liquidity</li>
+      <li>3D Mini-Games & Metaverse</li>
+    </ul>
+  </section>
+
+  <section id="tokenomics" class="panel">
+    <h2>Tokenomics</h2>
+    <p>Total: 1,000,000,000 ZOO • Airdrop 5% • Presale 20% • Liquidity 15% • Staking 15% • Charity 10% • Marketing 10% • Team 10% • Metaverse 10% • Burn 5%</p>
+  </section>
+
+  <footer class="footer">© 2025 ZoomieCoin — BEP20</footer>
+
+  <!-- Three.js (no modules — works on GitHub Pages) -->
   <script src="https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.min.js"></script>
   <script src="script.js"></script>
 </body>
