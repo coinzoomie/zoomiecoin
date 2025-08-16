@@ -1,59 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>ZoomieCoin — 3D Neon Tunnel</title>
-  <meta name="description" content="ZoomieCoin (ZOO) — An interactive 3D neon tunnel with a golden coin. Mouse/touch to orbit, scroll to boost speed.">
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoomie Coin - 3D Experience</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <canvas id="bg"></canvas>
+    <canvas id="bg"></canvas>
 
-  <header class="ui">
-    <div class="brand">🚀 ZoomieCoin</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#roadmap">Roadmap</a>
-      <a href="#tokenomics">Tokenomics</a>
-    </nav>
-  </header>
+    <main>
+        <header>
+            <h1>Zoomie Coin</h1>
+            <p>🚀 Welcome to the next dimension of crypto! 🚀</p>
+        </header>
 
-  <main class="content">
-    <section class="hero" id="hero">
-      <h1>ZoomieCoin (ZOO)</h1>
-      <p>Enter the tunnel. Feel the speed. Go 3D.</p>
-      <a class="btn" href="#about">Explore ↓</a>
-    </section>
+        <blockquote>
+            <p>An immersive journey into the world of decentralized fun.</p>
+        </blockquote>
 
-    <section class="panel" id="about">
-      <h2>About</h2>
-      <p>Geometry + animation + interaction. Drag to orbit. Scroll to boost the tunnel speed.</p>
-      <p>Optimized for mobile and desktop. No frameworks needed — pure Three.js.</p>
-    </section>
+        <section>
+            <h2>✨ What is Zoomie Coin?</h2>
+            <p>
+                Zoomie Coin is a community-driven project that combines the power of blockchain with stunning 3D art and interactive experiences. We believe in creating a fun and engaging ecosystem for everyone.
+            </p>
+            <div class="gif-container">
+                 <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2JpZW9qNnhsdzM1b294YW12NnM5cTJhbHZ3ZDA5aXU3M205cHN1eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/i21tL1j3I3CgM/giphy.gif" alt="Animated Fox">
+            </div>
+        </section>
 
-    <section class="panel" id="roadmap">
-      <h2>Roadmap</h2>
-      <ul>
-        <li>Airdrop & Viral Challenge</li>
-        <li>Presale + Charity Wallet</li>
-        <li>DEX Listing & Liquidity</li>
-        <li>3D Mini-Games & Metaverse</li>
-      </ul>
-      <p>Keep scrolling to feel the scene react.</p>
-    </section>
+        <section class="light">
+            <h2>💎 Features</h2>
+            <p><b>Interactive 3D World:</b> Explore our ever-expanding universe directly in your browser.</p>
+            <p><b>Community Focused:</b> Governed by the community for the community.</p>
+            <p><b>Creative & Fun:</b> We're all about pushing the boundaries of what a crypto project can be. Expect games, art, and surprises!</p>
+        </section>
 
-    <section class="panel" id="tokenomics">
-      <h2>Tokenomics</h2>
-      <p>Total Supply: 1,000,000,000 ZOO</p>
-      <p>Airdrop 5% • Presale 20% • Liquidity 15% • Staking 15% • Charity 10% • Marketing 10% • Team 10% • Metaverse 10% • Burn 5%</p>
-    </section>
+         <blockquote>
+            <p>Get ready to zoom!</p>
+        </blockquote>
+    </main>
 
-    <footer class="footer">© 2025 ZoomieCoin — BEP20</footer>
-  </main>
-
-  <!-- Three.js (no modules; works on GitHub Pages) -->
-  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
-  <script src="script.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.157.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.157.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
